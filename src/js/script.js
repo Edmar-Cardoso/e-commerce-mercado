@@ -191,11 +191,10 @@ function clickButtonComprar(){
                 divContainer.innerHTML = ``
                 createTemplateTotalCarrinho()
                 divContainer.classList.remove("hidden")
+                listingCardsCarrinho(arrayCarrinho)
+                ButtonsRemoveCarrinho()
             }
-        })
-        
-        listingCardsCarrinho(arrayCarrinho)
-        ButtonsRemoveCarrinho()
+        }) 
     }) 
 }
 function createCardCarrinho(produto){
