@@ -9,6 +9,13 @@ body {
   flex-direction: column;
   align-items: center;
 }
+body::-webkit-scrollbar {
+  width: 8px;
+}
+body::-webkit-scrollbar-thumb {
+  background-color: #12b886;
+  border-radius: 5px;
+}
 
 /* CABEÇALHO */
 header {
@@ -37,16 +44,26 @@ section {
 }
 .filtersContainer {
   width: 100%;
+  max-width: 1450px;
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding-top: 30px;
   padding-bottom: 20px;
+  margin: 0 auto;
 }
 .botoesContainer {
   display: flex;
   gap: 5px;
   margin-left: 6px;
+}
+
+.botoesContainer::-webkit-scrollbar {
+  height: 5px;
+}
+.botoesContainer::-webkit-scrollbar-thumb {
+  background-color: #12b886;
+  border-radius: 5px;
 }
 
 .estiloGeralBotoes {
@@ -71,6 +88,7 @@ section {
   width: 250px;
   display: flex;
   justify-content: space-between;
+  margin: 0px;
 }
 
 .campoBuscaPorNome {
@@ -100,7 +118,10 @@ main {
 
 .containerSecaoPrincipal {
   width: 100%;
+  max-width: 1450px;
   display: flex;
+
+  margin: 0 auto;
 }
 
 .containerListaProdutos {
@@ -109,9 +130,20 @@ main {
 }
 
 .containerListaProdutos ul {
+  width: 100%;
   list-style: none;
   display: flex;
+  justify-content: center;
   flex-wrap: wrap;
+}
+
+.containerListaProdutos ul::-webkit-scrollbar {
+  height: 5px;
+}
+
+.containerListaProdutos ul::-webkit-scrollbar-thumb {
+  background-color: #12b886;
+  border-radius: 5px;
 }
 
 .containerListaProdutos ul li {
@@ -121,6 +153,7 @@ main {
   border-radius: 5px;
   transition: ease-in-out 0.1s;
   width: 30%;
+  min-width: 200px;
   height: 360px;
   display: flex;
   flex-direction: column;
@@ -187,6 +220,7 @@ main {
 /*Carrinho */
 .containerCarrinho {
   width: 25%;
+  min-width: 250px;
   height: 400px;
   margin-top: 25px;
   display: flex;
@@ -310,7 +344,14 @@ main {
   justify-content: space-between;
   align-items: center;
 }
-@media screen and (max-width: 425px) {
+@media screen and (max-width: 976px) {
+  .filtersContainer {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+  }
+}
+@media screen and (max-width: 870px) {
   body {
     margin: 0px;
     padding: 0px;
@@ -331,7 +372,7 @@ main {
   .filtersContainer {
     width: 100%;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     flex-wrap: wrap;
     padding-top: 30px;
@@ -355,7 +396,7 @@ main {
   .containerBuscaPorNome {
     margin-left: 5%;
     margin-right: 4%;
-    max-width: 100%;
+    max-width: 400px;
     width: 100%;
     display: flex;
   }
@@ -442,6 +483,7 @@ main {
   }
   .containerCarrinho {
     width: 92%;
+    max-width: 300px;
     height: auto;
     max-height: 370px;
     margin-top: 10px;
@@ -450,6 +492,7 @@ main {
     justify-content: space-between;
     margin-left: 4%;
     margin-right: 4%;
+    margin: 0 auto;
   }
   .containerCarrinho ul {
     width: 100%;
