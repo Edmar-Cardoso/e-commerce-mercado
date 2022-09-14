@@ -1,65 +1,79 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./src/css/reset.css">
-    <link rel="stylesheet" href="./src/css/style.css">
-    <title>Lista de Produtos</title>
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>shop now</title>
+    <meta name="author" content="Edmar Cardoso" />
+    <link rel="icon" href="./src/img/icone-carrinho.png" />
+    <meta name="description" content="Site de compras de um mercado" />
+    <link rel="stylesheet" href="./src/css/reset.css" />
+    <link rel="stylesheet" href="./src/css/style.css" />
+  </head>
+  <body>
     <header>
-        <h1>Shop now</h1>
+      <h1>Shop now</h1>
     </header>
     <section>
-        <div id="filters" class="filtersContainer">
-            <div class="botoesContainer">
-                <button class="estiloGeralBotoes estiloGeralBotoes--mostrarTodos">Todos produtos</button>
-                <button class="estiloGeralBotoes estiloGeralBotoes--filtrarHortifruti">Hortifruti</button>
-                <button class="estiloGeralBotoes estiloGeralBotoes--filtrarPanificadora">Panificadora</button>
-                <button class="estiloGeralBotoes estiloGeralBotoes--filtrarLaticinios">Laticínios</button>
-            </div>
-           
-
-            <div class="containerBuscaPorNome">
-                
-                <input type="text" placeholder="Pesquisar por" class="campoBuscaPorNome">
-                <button class="estiloGeralBotoes--botaoBuscaPorNome"><i class="fa-solid fa-magnifying-glass"></i></button>
-
-            </div>
+      <div id="filters" class="filtersContainer">
+        <div class="botoesContainer">
+          <button class="estiloGeralBotoes estiloGeralBotoes--mostrarTodos">
+            Todos produtos
+          </button>
+          <button
+            class="estiloGeralBotoes estiloGeralBotoes--filtrarHortifruti"
+          >
+            Hortifruti
+          </button>
+          <button
+            class="estiloGeralBotoes estiloGeralBotoes--filtrarPanificadora"
+          >
+            Panificadora
+          </button>
+          <button
+            class="estiloGeralBotoes estiloGeralBotoes--filtrarLaticinios"
+          >
+            Laticínios
+          </button>
         </div>
+
+        <div class="containerBuscaPorNome">
+          <input
+            type="text"
+            placeholder="Pesquisar por"
+            class="campoBuscaPorNome"
+          />
+          <button class="estiloGeralBotoes--botaoBuscaPorNome">
+            <i class="fa-solid fa-magnifying-glass"></i>
+          </button>
+        </div>
+      </div>
     </section>
-    
-    <main> 
-        <div class="containerSecaoPrincipal">
-            <div class="containerListaProdutos" id="listProdutos">
-                <ul>
-            
-                </ul>
-            </div>
-            <div class="containerCarrinho">
-                <div class="tituloEUlCarrinho">
-                    <div class="tituloCarrinho">
-                        <i class="fa-solid fa-cart-arrow-down"></i>
-                        <p class="nomeCarrinho">Carrinho</p>
-                    </div>
-                    <ul class="ulProductsCarrinho">
-                        
-                    </ul>        
-                </div>             
-                <div class="totalContainer hidden" >
 
-                </div>               
-            </div>
+    <main>
+      <div class="containerSecaoPrincipal">
+        <div class="containerListaProdutos" id="listProdutos">
+          <ul></ul>
         </div>
-       
-
-        
+        <div class="containerCarrinho">
+          <div class="tituloEUlCarrinho">
+            <div class="tituloCarrinho">
+              <i class="fa-solid fa-cart-arrow-down"></i>
+              <p class="nomeCarrinho">Carrinho</p>
+            </div>
+            <ul class="ulProductsCarrinho"></ul>
+          </div>
+          <div class="totalContainer hidden"></div>
+        </div>
+      </div>
     </main>
 
     <script src="src/js/dataProdutos.js"></script>
     <script src="src/js/script.js"></script>
-    <script src="https://kit.fontawesome.com/2252527878.js" crossorigin="anonymous"></script>
-</body>
+    <script
+      src="https://kit.fontawesome.com/2252527878.js"
+      crossorigin="anonymous"
+    ></script>
+  </body>
 </html>
